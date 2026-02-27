@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>4 Meses Juntitas 💕</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #d63384;
+      margin-top: 20px;
+    }
+    .dedicatoria {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: left;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .galeria img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .contador {
+      font-size: 1.5em;
+      margin: 20px;
+      color: #d63384;
+    }
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 4 Meses Juntitas 💖</h1>
+
+  <!-- Música de fondo -->
+  <audio controls autoplay loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <!-- Dedicatoria completa -->
+  <div class="dedicatoria">
+    <p>Mi niña hermosa 🥺💖<br>
+    ¡Awwww, ya son 4 meses juntitas! 😭💕 No puedo creer lo rápido que pasó, y siento que cada día contigo ha sido tan bonito, tan nuestro, que nadie más podría entenderlo 💗✨️ Mi amorcito cada momento contigo me hace sentir tan feliz, tan completa, que no hay nada que yo quiera más que estar contigo toda la vida, amándote con mi alma entera, cuidándote, abrazándote, riéndome contigo y siendo solo nosotras siempre 🥰💖</p>
+
+    <p>Gracias por ser mi niña hermosa, por tu amor, por tus abrazos, tus besitos, tus sonrisas, tus mensajes, por cada detalle que haces y que me hace sentir tan especial y tan amada 🥺💕 Gracias por ser mi compañera de vida... Gracias por ser tú, simplemente tú, y hacer que todo lo nuestro sea tan bonito y tan nuestro que nadie más lo entendería 💗🫶🏻</p>
+
+    <p>Mi amorcito quiero que sepas que todo de mí es para ti, que todo lo que tengo y todo lo que soy es para ti 🥰💖. Yo daría todo por ti, sin pensarlo, porque tú te mereces todo, todo el mundo entero, y yo quiero que siempre te sientas así de amada y cuidada mi niña hermosa 🥺💕 Tú eres lo más importante para mí, mi niña hermosa, lo más bonito que me pasó en la vida 🥰💗</p>
+
+    <p>Gracias por estos 4 meses juntitas, por cada risa, cada abrazo, cada cosita linda que hacemos, cada mensaje, cada llamada, todooooo 🥺💖 Gracias por tu paciencia, tu amor y por hacerme tan feliz mi vida. Me haces sentir que lo nuestro es único, solo nuestro, que nadie más lo entendería 💕</p>
+
+    <p>Te amooo con mi alma entera mi niña hermosa, más de lo que puedo decir con palabras 🥺💗. Siempre nosotras, siempre juntitas, siempre amándonos y cuidándonos como lo hacemos 🥰💖</p>
+
+    <p>¡Felices 4 meses juntitas mi amor! 🥺💕<br>
+    ¡TE AMOOOOOO CON MI ALMA ENTERA! 😻💖</p>
+  </div>
+
+  <!-- Galería de fotos (7 imágenes) -->
+  <div class="galeria">
+    <img src="foto1.jpg" alt="Nosotras">
+    <img src="foto2.jpg" alt="Nosotras">
+    <img src="foto3.jpg" alt="Nosotras">
+    <img src="foto4.jpg" alt="Nosotras">
+    <img src="foto5.jpg" alt="Nosotras">
+    <img src="foto6.jpg" alt="Nosotras">
+    <img src="foto7.jpg" alt="Nosotras">
+  </div>
+
+  <!-- Contador de días -->
+  <div class="contador" id="contador"></div>
+
+  <script>
+    // Contador desde el inicio de la relación
+    const fechaInicio = new Date("2025-10-28T00:00:00"); // Fecha ajustada
+    function actualizarContador() {
+      const ahora = new Date();
+      const diferencia = ahora - fechaInicio;
+      const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+      const segundos = Math.floor((diferencia / 1000) % 60);
+      document.getElementById("contador").innerHTML =
+        dias + " DÍAS " + horas + " HORAS " + minutos + " MINS " + segundos + " SEGS";
+    }
+    setInterval(actualizarContador, 1000);
+  </script>
+
+</body>
+</html>
